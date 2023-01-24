@@ -1,0 +1,22 @@
+{
+  "permissions": ["activeTab"],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "close_windows": {
+      "description": "Send a 'toggle-feature' event to the extension",
+      "suggested_key": {
+        "default": "Alt+I"
+      }
+    }
+  },
+  "browser_action": {
+    "default_title": "Close Incognito"
+  },
+  "description": "Press Alt + I to close all Incognito Windows that are open.",
+  "manifest_version": 2,
+  "name": "Close Incognito Windows - Keyboard Shortcut",
+  "version": "1.0.0"
+}
